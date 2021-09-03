@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/css/app.css">
+</head>
+<body>
+    <div class="app">
+        <div class="app-container">
+            <h3 style="padding: 0 1rem; margin-bottom: 5rem">Todo list</h3>
+            <div class="app-header">
+                <input type="text" name="todo_name" placeholder="" />
+                <span class="focus-border"></span>
+                <label for="todo_name" class="lbl-name">Enter your todo</label>
+                <button class="btn btn-create">
+                    <img style="height: 100%;" src="./img/pen.png" alt="">
+                </button>
+            </div>   
+            <div class="app-main">
+                <div class="options">
+                    <span class="option-current">All</span>
+                    <ul class="option-list blur">
+                        <li class="option-item"><a href="#" class="option-link">All</a></li>
+                        <li class="option-item"><a href="#" class="option-link">Completed</a></li>
+                        <li class="option-item"><a href="#" class="option-link">Uncompleted</a></li>
+                    </ul>
+                    <i style="color: var(--primaryColor);" class="fas fa-chevron-down"></i>
+                </div>
+                <div class="app-content">
+                    <div class="symbol-null">
+                        <img title="Empty task" src="./img/symbol_null.png" alt="">
+                    </div>
+                    
+                    <div class="content-item">
+                        <span class="item-name">Breakfast</span>
+                        <button class="btn btn-check"><i class="fas fa-check"></i></button>
+                        <button class="btn btn-remove"><i class="far fa-trash-alt"></i></button>
+                        
+                        <div class="item-time">
+                            <span>
+                                <span>Start day:</span>
+                                <span class="start-time">30/06/2021</span>    
+                            </span>
+                            <span>-</span>
+                            <span>
+                                <span>Finish day:</span>
+                                <span class="finish-time">15/07/2021</span>    
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>             
+
+        </div>
+    </div>
+
+
+    <script src="./dist/js/jquery-3.6.0.min.js"></script>
+    <script src="./dist/js/main.js"></script>
+</body>
+</html>
